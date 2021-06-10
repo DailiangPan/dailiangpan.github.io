@@ -1,109 +1,455 @@
-/* Bootstrap simplifies our workflow, but it's still helpful to add our own CSS */
-/* This file will include CSS to override Bootstrap defaults */
-
-/* Typography */
 body{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-}
-h1, h2, h3, h4, h5, h6{
-    font-family: 'Bree Serif', serif;
-}
-.badge{
-    font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #666666;
+  font-family: 'GB', sans-serif;
+  line-height: 1.4;
+  background-color: #000;
 }
 
-/* Wordmark */
-#wordmark {
-    font-family: 'Bree Serif', serif;
-    font-size: 1.4em;
-}
-#wordmark span {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 300;
-    font-size: 1.4em;
-}
-#wordmark svg {
-    fill: #fff;
+a: {
+  outline: none;
 }
 
-/* Hero */
-#hero{
-    background-image: url(../img/sabbath.jpg);
-    background-size: cover;
-    background-position: 50% 30%;
-    background-blend-mode: soft-light;
+a: -webkit-any-link {
+  cursor: pointer;
 }
 
-#humans #hero {
-  background-image: url(../img/human.jpg);
+a {
+  outline: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'GB';
 }
 
-#chumly #hero{
-    background-image: url(../img/chumly.jpg);
+a img {
+  border: none;
 }
 
-#chumly #numbers{
-    background-image: url(../img/dandelions.jpg);
-    background-size: cover;
-    background-position: 50% 30%;
-    background-blend-mode: soft-light;
+#toppannel {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 13px;
 }
 
-#chumly #numbers .row{
-    background-color: #ffffff66;  /*rrggbbaa */
+.tab {
+  background-color: #000;
+  background: url(../img/tab.png) repeat-x 0 0;
+  height: 42px;
+  position: relative;
+  top: 0;
+  z-index: 999;
 }
 
-#chumly .progress{
-    height: 100%;
-}
-
-#friends #hero{
-  background-image: none;
-}
-
-#friends #hero video {
-  object-fit: cover;
-  mix-blend-mode: soft-light;
-}
-
-#friends #hero span.masha {
-  color: sienna;
-  background-color: #fff;
-}
-
-#friends #hero span.jack {
-  color: black;
-  background-color: #fff;
-}
-
-#friends #hero span.qeeqee {
-  color: salmon;
-  background-color: #fff;
-}
-
-#friends .carousel-caption{
-  background: #00000066;
-}
-/* Dark background */
-.bg-dark {
-    background-color: #382d44!important;
-}
-
-.dropdown-menu-dark {
-    background-color: #2e2538!important;
-}
-
-.bg-secondary {
-    background-color: #978ca3!important;
-}
-
-.dropdown-menu-dark .dropdown-item.active,
-.dropdown-menu-dark .dropdown-item:active {
-    background-color: #59377e;
+.tab ul.login {
+  display: block;
+  position: relative;
+  float: right;
+  clear: right;
+  height: 42px;
+  width: auto;
+  line-height: 42px;
+  margin: 0;
+  right: 150px;
+  color: white;
+  font-size: 80%;
+  text-align: center;
 }
 
 
-.bg-info{
-    background-color: #e6dbac!important;
+.tab ul.login li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.tab ul.login li.left {
+  background: url(../img/tableft.png) no-repeat left 0;
+  height: 42px;
+  width: 30px;
+  padding: 0;
+  margin: 0;
+  display: block;
+  float: left;
+}
+
+.tab ul.login li.right {
+  background: url(../img/tabright.png) repeat left 0;
+  height: 42px;
+  width: 30px;
+  padding: 0;
+  margin: 0;
+  display: block;
+  float: left;
+}
+
+.tab ul.login li {
+  background: url(../img/tabmiddle.png) repeat-x 0 0;
+  padding: 0 10px 0 6px;
+  display: block;
+  float: left;
+  height: 42px;
+  text-align: left;
+}
+
+.tab ul.login li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+}
+
+.tab a.open {
+  background: url(../img/open.png) no-repeat left 0;
+}
+
+.tab a.close {
+  background: url(../img/close.png) no-repeat left 0;
+}
+
+.tab a.open, .tab a.close {
+  height: 20px;
+  line-height: 20px;
+  padding-left: 28px;
+  cursor: pointer;
+  width: 70px;
+  position: relative;
+  top: 4px;
+}
+
+#columnLeft {
+  float: left;
+  width: 234px;
+  margin-right: 0;
+}
+
+#logo {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+
+a:link {
+  color: #42413C;
+  text-decoration: none;
+}
+
+
+.wrapper {
+  background-color: #f9f9f9;
+  width: 100%;
+}
+
+.container {
+  width: 1200px;
+  background: #f9f9f9;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.content {
+  padding: 10px 0;
+}
+
+.home #columnRight {
+  margin-bottom: -20px;
+}
+
+#columnRight {
+  margin-left: 234px;
+}
+
+#header {
+  height: 80px;
+  border-bottom: 1px solid #666666;
+}
+
+a:hover {
+  background: #000;
+}
+
+#menu {
+  list-style-type: none;
+  padding-top: 23px;
+  margin-left: 144px;
+}
+
+ul, ol, dl {
+  padding: 0;
+  margin: 0;
+}
+
+#menu li {
+  float: left;
+  height: 40px;
+  padding-top: 4px;
+  color: white;
+  padding-left: 5px;
+  margin-right: 35px;
+  margin-left: 35px;
+  font-size: 23px;
+  color: Black;
+  font-family: 'GB';
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+#menu li.divline {
+  padding: 0;
+  border-right: thin solid black;
+  height: 8px;
+  margin: 26px 0 0;
+}
+
+#main {
+  margin-top: 50px;
+  font-size: 12px;
+}
+
+#mainLeft {
+  width: 280px;
+  font-size: 16px;
+  float: left;
+}
+
+.home #mainleft img {
+  padding-top: 30px;
+}
+
+#mainLeft .text {
+  margin-top: 20px;
+  float: none;
+  margin-bottom: 60px;
+}
+
+h1 {
+  color: #444;
+  text-align: left;
+  font-size: 20px;
+  line-height: 20px;
+  margin-top: -9px;
+}
+
+.home #mainRight {
+  padding-left: 40px;
+}
+
+#mainRight {
+  margin-left: 293px;
+}
+
+.clearfloat {
+  clear: both;
+  height: 0;
+  font-size: 1px;
+  line-height: 0px;
+}
+
+#footer {
+  color: #666666;
+  font-size: 11px;
+  height: 100px;
+  margin-top: -92px;
+}
+
+#footer a:hover{
+	text-decoration: underline;
+}
+
+#footerImg {
+  height: 92px;
+  background: url(../img/footer.gif) center;
+  background-repeat: no-repeat;
+}
+
+#footer #stripe {
+  height: 20px;
+  margin-bottom: 8px;
+  background: black no-repeat;
+}
+
+#stripeLeft {
+  background: url(../img/stripeRoundLeft.gif) left top;
+  height: 6px;
+  float: left;
+  width: 5px;
+}
+
+#stripeRight {
+  background: url(../img/stripeRoundRight.gif) left top;
+  height: 6px;
+  border-color: #fa863d;
+  float: right;
+  width: 5px;
+}
+
+#footer .container {
+  background-color: #000;
+  width: 956px;
+  padding-left: 231px;
+  height: 100px;
+}
+
+.container {
+  background: #f9f9f9;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+#copyright {
+  float: left;
+  padding-right: 30px;
+}
+
+script {
+  display: none;
+}
+
+#footer .nav {
+  float: left;
+  padding: 30px;
+  padding-top: 0px;
+}
+
+#footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#contact p {
+  color: #fff;
+  font-family: 'GB';
+  font-weight: bold;
+  font-size: 15px;
+}
+
+
+
+#contact {
+  float: right;
+  text-align: right;
+  padding-top: 0;
+}
+
+
+
+
+.CreativeActivity #main {
+  margin-top: 27px;
+}
+
+.CreativeActivity #mainLeft {
+  width: 263px;
+  font-size: 20px;
+  float: left;
+  margin-top: 32px;
+}
+
+.CreativeActivity #mainRight {
+  margin-left: 254px;
+}
+
+.HeadercolumnLeft {
+  padding-top: 0px;
+}
+
+/*.CreativeActivity .columnRight {
+  text-decoration: underline;
+  float: right;
+  font-size: 20px;
+  width: 320px;
+  padding-top: 0;
+  padding-bottom: 100px;
+  margin-left: -4px;
+  border: 100%
+}*/
+
+
+.CreativeActivity p{
+  font-size: 15px;
+  font-family: 'GB';
+  font-weight: bold;
+  color: #000;
+}
+
+.CreativeActivity a{
+  font-size: 15px;
+  font-family: 'GB';
+  font-weight: bold;
+}
+
+.Lifestyle p{
+  font-size: 15px;
+  font-family: 'GB';
+  font-weight: bold;
+  color: #000;
+}
+
+.Lifestyle a{
+  font-size: 15px;
+  font-family: 'GB';
+  font-weight: bold;
+}
+
+.Lifestyle #main {
+  margin-top: 27px;
+}
+
+.Lifestyle #mainLeft {
+  width: 263px;
+  font-size: 20px;
+  float: left;
+  margin-top: 32px;
+}
+
+.Lifestyle #mainRight {
+  margin-left: 254px;
+}
+
+h1 {
+  font-size: 30px;
+  font-style: oblique;
+  color: gray;
+}
+
+h2 {
+  font-size: 24px;
+  font-family: 'GB';
+  font-weight: bold;
+  color: #000;
+}
+
+.Eating p{
+  font-family: 'GB';
+  font-size: 15px;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.Painting p{
+  font-family: 'GB';
+  font-size: 15px;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.Garment p{
+  font-family: 'GB';
+  font-size: 15px;
+  font-weight: bold;
+  text-align: justify;
+}
+.Poetry p{
+  font-family: 'GB';
+  font-size: 15px;
+  font-weight: bold;
+  text-align: justify;
 }
